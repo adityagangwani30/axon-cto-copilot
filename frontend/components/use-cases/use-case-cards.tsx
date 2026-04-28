@@ -179,15 +179,9 @@ export function UseCaseCards() {
         >
           <h2 className="text-2xl font-bold text-foreground">Ready to transform your workflow?</h2>
           <p className="mx-auto mt-2 max-w-xl text-muted-foreground">
-            Start your 30-day free trial and experience these improvements firsthand.
+            Learn more in the documentation.
           </p>
           <div className="mt-6 flex flex-wrap justify-center gap-4">
-            <Button size="lg" asChild>
-              <Link href="/pricing" className="gap-2">
-                Start Free Trial
-                <ArrowRight className="h-4 w-4" />
-              </Link>
-            </Button>
             <Button size="lg" variant="outline" asChild>
               <Link href="/docs">View Documentation</Link>
             </Button>

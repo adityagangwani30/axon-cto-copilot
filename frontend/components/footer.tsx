@@ -1,5 +1,5 @@
 import Link from "next/link"
-import { Zap, Github, Linkedin, Twitter } from "lucide-react"
+import { Zap, Linkedin, Twitter } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const footerLinks = {
@@ -11,12 +11,10 @@ const footerLinks = {
   ],
   product: [
     { label: "Features", href: "/features" },
-    { label: "Pricing", href: "/pricing" },
     { label: "Docs", href: "/docs" },
     { label: "Security", href: "/security" },
   ],
   resources: [
-    { label: "GitHub Repo", href: "https://github.com" },
     { label: "Community Discord", href: "https://discord.com" },
     { label: "API Docs", href: "/docs/api" },
     { label: "Roadmap", href: "/roadmap" },
@@ -45,14 +43,6 @@ export function Footer() {
               AI-powered CTO assistant that automates executive intelligence delivery.
             </p>
             <div className="mt-6 flex gap-4">
-              <Link
-                href="https://github.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground transition-colors hover:text-foreground"
-              >
-                <Github className="h-5 w-5" />
-              </Link>
               <Link
                 href="https://linkedin.com"
                 target="_blank"

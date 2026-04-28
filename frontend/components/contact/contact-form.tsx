@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Mail, MessageSquare, Github, Calendar, Send, Check } from "lucide-react"
+import { Mail, MessageSquare, Users, Calendar, Send, Check } from "lucide-react"
 import Link from "next/link"
 
 const subjects = [
@@ -81,14 +81,14 @@ export function ContactForm() {
 
               <div className="flex items-start gap-4">
                 <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
-                  <Github className="h-5 w-5" />
+                  <Users className="h-5 w-5" />
                 </div>
                 <div>
-                  <h3 className="font-medium text-foreground">GitHub Discussions</h3>
+                  <h3 className="font-medium text-foreground">Community Discussions</h3>
                   <p className="mt-1 text-sm text-muted-foreground">
                     Feature requests and technical discussions
                   </p>
-                  <Link href="https://github.com" target="_blank" className="mt-1 text-sm text-primary hover:underline">
+                  <Link href="https://discord.com" target="_blank" className="mt-1 text-sm text-primary hover:underline">
                     Open Discussion
                   </Link>
                 </div>
@@ -99,12 +99,8 @@ export function ContactForm() {
             <div className="mt-10 rounded-xl border border-primary/30 bg-primary/5 p-6">
               <h3 className="font-semibold text-foreground">Enterprise or Pro Interest?</h3>
               <p className="mt-2 text-sm text-muted-foreground">
-                Book a demo to see Axon in action and discuss custom requirements.
+                Please contact us for enterprise inquiries.
               </p>
-              <Button className="mt-4 w-full gap-2" variant="outline">
-                <Calendar className="h-4 w-4" />
-                Book a Demo
-              </Button>
               <p className="mt-3 text-center text-xs text-muted-foreground">
                 Or email: sales@axonai.dev
               </p>

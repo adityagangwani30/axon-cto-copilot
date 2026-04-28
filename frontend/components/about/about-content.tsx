@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion"
 import { Button } from "@/components/ui/button"
-import { Zap, BarChart3, Clock, Github, Users, ArrowRight } from "lucide-react"
+import { Zap, BarChart3, Clock, Users, ArrowRight } from "lucide-react"
 import Link from "next/link"
 
 const values = [
@@ -172,7 +172,7 @@ export function AboutContent() {
             className="text-center"
           >
             <div className="mx-auto mb-6 flex h-14 w-14 items-center justify-center rounded-2xl bg-primary/10">
-              <Github className="h-7 w-7 text-primary" />
+              <Users className="h-7 w-7 text-primary" />
             </div>
             <h2 className="text-2xl font-bold text-foreground sm:text-3xl">Community & Open Source</h2>
             <p className="mx-auto mt-4 max-w-2xl text-muted-foreground">
@@ -180,12 +180,6 @@ export function AboutContent() {
               with community input and transparency.
             </p>
             <div className="mt-8 flex flex-wrap justify-center gap-4">
-              <Button size="lg" asChild>
-                <Link href="https://github.com" target="_blank" rel="noopener noreferrer" className="gap-2">
-                  <Github className="h-4 w-4" />
-                  View on GitHub
-                </Link>
-              </Button>
               <Button size="lg" variant="outline" asChild>
                 <Link href="https://discord.com" target="_blank" rel="noopener noreferrer" className="gap-2">
                   <Users className="h-4 w-4" />
@@ -194,7 +188,7 @@ export function AboutContent() {
               </Button>
             </div>
             <p className="mt-6 text-sm text-muted-foreground">
-              Want to contribute? Check out our contribution guide on GitHub.
+              Want to contribute? Check out our contribution guide.
             </p>
           </motion.div>
         </div>

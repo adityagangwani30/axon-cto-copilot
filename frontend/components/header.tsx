@@ -2,14 +2,13 @@
 
 import Link from "next/link"
 import { useState } from "react"
-import { Menu, X, Zap, Github } from "lucide-react"
+import { Menu, X, Zap } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const navLinks = [
   { href: "/", label: "Home" },
   { href: "/features", label: "Features" },
   { href: "/architecture", label: "Architecture" },
-  { href: "/pricing", label: "Pricing" },
   { href: "/use-cases", label: "Use Cases" },
   { href: "/docs", label: "Docs" },
   { href: "/about", label: "About" },
@@ -44,18 +43,9 @@ export function Header() {
 
         {/* Desktop CTAs */}
         <div className="hidden items-center gap-4 lg:flex">
-          <Link
-            href="https://github.com"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="text-muted-foreground transition-colors hover:text-foreground"
-          >
-            <Github className="h-5 w-5" />
-          </Link>
-          <Button variant="ghost" size="sm">
-            Sign In
+          <Button size="sm" asChild>
+            <Link href="/contact">Start Demo</Link>
           </Button>
-          <Button size="sm">Start Free Trial</Button>
         </div>
 
         {/* Mobile Menu Button */}
@@ -84,10 +74,9 @@ export function Header() {
               </Link>
             ))}
             <div className="flex flex-col gap-2 pt-4">
-              <Button variant="ghost" className="w-full justify-start">
-                Sign In
+              <Button className="w-full" asChild>
+                <Link href="/contact">Start Demo</Link>
               </Button>
-              <Button className="w-full">Start Free Trial</Button>
             </div>
           </div>
         </div>

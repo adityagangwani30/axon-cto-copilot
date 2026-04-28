@@ -358,7 +358,7 @@ store: false  # No long-term memory for this skill`} />
           <h3 className="font-semibold text-foreground">How much does Axon cost to run?</h3>
           <p className="mt-2 text-sm text-muted-foreground">
             Self-hosted: ~$7-20/month (VPS + Claude API). Managed Pro tier: $29/month 
-            all-inclusive. See our pricing page for detailed breakdowns.
+            all-inclusive. See the cost breakdown in our docs for details.
           </p>
         </div>
         <div className="rounded-lg border border-border/50 bg-card p-4">
