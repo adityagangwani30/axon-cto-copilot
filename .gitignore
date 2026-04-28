@@ -1,0 +1,26 @@
+# Root ignores
+.venv/
+venv/
+.env
+.env.local
+.env.*.local
+
+# Node / Next.js
+node_modules/
+.next/
+out/
+dist/
+coverage/
+
+# Tooling and OS files
+.DS_Store
+Thumbs.db
+
+# Frontend sandbox files
+frontend/.v0_runtime_loader.js
+frontend/.v0_devtools.tsx
+frontend/.v0_jsx-dev-runtime.ts
+frontend/.snowflake/
+frontend/.v0-trash/
+frontend/.vercel/
+frontend/next.user-config.*

@@ -1,0 +1,2 @@
+# No Python dependencies are required for the current frontend app.
+# Add packages here if Python-based tooling is introduced later.
